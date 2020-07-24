@@ -4,49 +4,26 @@ $(document).ready(function () {
         rootMargin: "150px 0px"
     });
     observer.observe();
-    //navbar menu 收合
-    $('.navbar-nav>li>a').on('click', function(){
-        $('.navbar-collapse').removeClass('show');
-        $('.navbar-toggler').addClass('collapsed');
-        $('.navbar-light .navbar-toggler ').attr("aria-expanded","false");
-    });
-    //navbar menu動態
-    $('.navbar-nav>li>a[href="#"],.logo-router>h1>a').on('click', function () {
-        $('html,body').animate({
-            scrollTop: 0,
-         }, 500);
-    });
-    $('.navbar-nav>li>a[href="#worry"]').on('click', function () {
-        $('html,body').animate({
-            scrollTop: $('#worry').offset().top,
-         }, 500);
-    });
-    $('.navbar-nav>li>a[href="#approach"]').on('click', function () {
-        $('html,body').animate({
-            scrollTop: $('#approach').offset().top,
-         }, 500);
-    });
-    $('.navbar-nav>li>a[href="#recommend"]').on('click', function () {
-        $('html,body').animate({
-            scrollTop: $('#recommend').offset().top,
-         }, 500);
-    });
-    $('.navbar-nav>li>a[href="#question"]').on('click', function () {
-        $('html,body').animate({
-            scrollTop: $('#question').offset().top,
-         }, 500);
-    });
-    $('a[href="#lp_form"]').on('click', function () {
-        $('html,body').animate({
-            scrollTop: $('#lp_form').offset().top,
-         }, 500);
+    // 立即購買btn動態
+    $('.offerbtn, .offerbtn_m').click(function (e) { 
+        e.preventDefault();
+        $('html , body').animate({
+            scrollTop: $('#size').offset().top,
+        },900);
     });
     // 立即訂購btn動態
     $('.buybtn').click(function (e) { 
         e.preventDefault();
         $('html , body').animate({
-            scrollTop: $('#buy').offset().top,
+            scrollTop: $('#size').offset().top,
         },900);
     });
-});
 
+    //偵測sns line btn 手機版還是電腦版，連結不同
+    var vw=$(window).width();
+    if (vw <= 768) {
+        $(".line_link").attr("href", "https://bit.ly/2YszXqD");
+    } else {
+        $(".line_link").attr("href", "https://line.me/R/ti/p/%40fhl1857j");
+    }
+});
