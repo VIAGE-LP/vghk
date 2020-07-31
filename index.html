@@ -40,19 +40,21 @@
 
 
   <!-- 20200708 聯盟網 -->
-  <!-- <script type="text/javascript">
-    (function () {
-      var VARemoteLoadOptions = {
-        whiteLabel: { id: 8, siteId: 1867, domain: 'vbtrax.com' },
-        locale: "en-US", mkt: true
-      };
-      (function (c, o, n, v, e, r, l, y) {
-        c['VARemoteLoadOptions'] = e; r = o.createElement(n), l = o.getElementsByTagName(n)[0];
-        r.async = 1; r.src = v; l.parentNode.insertBefore(r, l);
-      })(window, document, 'script', 'https://cdn.vbtrax.com/javascripts/va.js', VARemoteLoadOptions);
-    })();
-  </script> -->
-  <!-- <style>
+  <script type="text/javascript">
+    if (getJsonFromUrl().utm_source =='affiliates') {
+      (function () {
+        var VARemoteLoadOptions = {
+          whiteLabel: { id: 8, siteId: 1867, domain: 'vbtrax.com' },
+          locale: "en-US", mkt: true
+        };
+        (function (c, o, n, v, e, r, l, y) {
+          c['VARemoteLoadOptions'] = e; r = o.createElement(n), l = o.getElementsByTagName(n)[0];
+          r.async = 1; r.src = v; l.parentNode.insertBefore(r, l);
+        })(window, document, 'script', 'https://cdn.vbtrax.com/javascripts/va.js', VARemoteLoadOptions);
+      })();
+    }
+  </script>
+  <style>
     #wrapper .tit {
       padding: unset;
       background-color: unset;
@@ -100,7 +102,7 @@
     #lp_form a:not([href]):not([tabindex]) {
       color: #FFFFFF;
     }
-  </style> -->
+  </style>
   <!-- ▲自由編集箇所▲ -->
 </head>
 
@@ -223,7 +225,7 @@
         <section class="sns_btn mt-3">
           <ul>
             <li><a href="https://www.facebook.com/viage.tw/" target="blank"><img data-src="img/s_fb.png" alt=""
-              class="lozad"></a></li>
+                  class="lozad"></a></li>
             <li><a href="https://www.instagram.com/viage_tw/?hl=zh-tw" target="blank">
                 <img id="ig" src="img/s_ig.png" alt="" class="lozad">
               </a></li>
