@@ -1,8 +1,8 @@
 html,body {
         margin: 0;
         padding: 0;
-        height: 100%;
         border: none;
+        background-image: linear-gradient(#E54141, #f87b72,#FC4F4F);
     }
 .main {
     width: 100%;
