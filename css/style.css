@@ -1,8 +1,8 @@
 html,body {
         margin: 0;
         padding: 0;
+        height: 100%;
         border: none;
-        background-image: linear-gradient(#E54141, #f87b72,#FC4F4F);
     }
 .main {
     width: 100%;
@@ -25,10 +25,10 @@ html,body {
 
 .PC .offerbox .offerbtn{
     position: absolute;
-    width: 25%;
+    width: 20%;
     display: block;
-    bottom: 6%;
-    right: 38%;
+    bottom: 9%;
+    right: 40%;
 }
 
 .SP .offerbox_m{
@@ -40,7 +40,7 @@ html,body {
     width: 63%;
     display: block;
     right: 18%;
-    bottom: 3%;
+    top: 45.5%;
 }
 
 .offerbtn:hover{
