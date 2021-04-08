@@ -27,7 +27,7 @@ html,body {
     position: absolute;
     width: 20%;
     display: block;
-    bottom: 9%;
+    bottom: 8%;
     right: 40%;
 }
 
@@ -35,12 +35,20 @@ html,body {
     position: relative;
 }
 
-.SP .offerbox_m .offerbtn_m{
+.SP .offerbox_m .offerbtn_m_1{
     position: absolute;
     width: 63%;
     display: block;
     right: 18%;
-    top: 45.5%;
+    top: 35.5%;
+}
+
+.SP .offerbox_m .offerbtn_m_2{
+    position: absolute;
+    width: 63%;
+    display: block;
+    right: 18%;
+    bottom: 2.5%;
 }
 
 .offerbtn:hover{
